@@ -5,31 +5,38 @@ The system provides **evidence-backed answers**, improving reliability and inter
 
 ---
 
-## Architecture
+## 🧠 Architecture
 
 ```mermaid
-flowchart TD
-    A[User - Streamlit UI] --> B[FastAPI Backend /query]
-    B --> C[LangGraph Workflow]
+flowchart LR
+    U[User]
+    S[Streamlit UI]
+    A[FastAPI API]
 
-    C --> D[Query Rewrite]
-    D --> E[Embedding Generation]
+    subgraph G[LangGraph Workflow]
+        Q[Query Rewrite]
+        R[Retriever]
+        L[LLM Answer Generation]
+        E[Evaluation]
+    end
 
-    E --> F[ChromaDB Vector Search]
-    F --> G[Retrieved Documents]
+    V[(ChromaDB)]
+    O[OpenAI API]
+    X[Final Response]
 
-    G --> H[Snippet Deduplication + Ranking]
-
-    H --> I[LLM Answer Generation]
-    I --> J[Evaluation Layer]
-
-    J --> K[Support Status]
-    J --> L[Confidence Score]
-
-    K --> M[Final Response]
-    L --> M
-
-    M --> N[Streamlit UI Display]
+    U --> S
+    S --> A
+    A --> Q
+    Q --> R
+    R --> V
+    R --> O
+    R --> L
+    L --> O
+    L --> E
+    E --> X
+    X --> A
+    A --> S
+    S --> U
 ```
 
 ---
