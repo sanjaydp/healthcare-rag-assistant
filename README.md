@@ -49,25 +49,25 @@ flowchart TD
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🔍 Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
 - Semantic search over healthcare documents
 - Context-aware retrieval using embeddings
 
-### 🧠 Query Intelligence
+### Query Intelligence
 - Query rewriting for improved retrieval quality
 - Handles vague and broad clinical questions
 
-### 📄 Evidence-Based Responses
+### Evidence-Based Responses
 - Answers grounded in retrieved documents
 - Source citations with page-level references
 
-### 🧹 Clean Evidence Rendering
+### Clean Evidence Rendering
 - Deduplication of overlapping chunks
 - Embedding-based snippet ranking
 
-### 📊 Answer Quality Evaluation
+### Answer Quality Evaluation
 **Support Status:**
 - Supported
 - Partially Supported
@@ -78,10 +78,10 @@ flowchart TD
 - Medium
 - Low
 
-### 💬 Conversational Memory
+### Conversational Memory
 - Maintains context across follow-up questions using LangGraph
 
-### 🎯 Structured Output
+### Structured Output
 - Clinical-style formatted answers
 - Organized evidence sections:
   - Key Evidence
@@ -90,7 +90,7 @@ flowchart TD
 
 ---
 
-## 🧪 Example Queries
+## Example Queries
 
 - What does the guideline recommend for diabetes?
 - Summarize key recommendations from this document
@@ -100,7 +100,7 @@ flowchart TD
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 healthcare-rag-assistant/
@@ -120,7 +120,7 @@ healthcare-rag-assistant/
 
 ---
 
-## ⚡ How to Run
+## How to Run
 
 **1. Clone the repository**
 ```bash
@@ -158,7 +158,7 @@ streamlit run frontend/streamlit_app.py
 
 ---
 
-## 🔄 System Workflow
+## System Workflow
 
 1. **Upload Document** — Clinical guideline PDFs are uploaded and processed
 2. **Chunking & Embedding** — Text is split into chunks and embedded
@@ -171,39 +171,39 @@ streamlit run frontend/streamlit_app.py
 
 ---
 
-## 📈 Current Status
+## Current Status
 
-- ✅ Fully functional RAG system
-- ✅ Multi-document support
-- ✅ Query rewriting
-- ✅ Snippet ranking + deduplication
-- ✅ Evidence-backed answers
-- ✅ Confidence + support evaluation
-- ✅ Clean UI with structured outputs
+- Fully functional RAG system
+- Multi-document support
+- Query rewriting
+- Snippet ranking + deduplication
+- Evidence-backed answers
+- Confidence + support evaluation
+- Clean UI with structured outputs
 
 ---
 
 ## 🚧 Future Improvements
 
-- 🔜 Patient-specific clinical reasoning (decision support)
-- 🔜 Guideline strength extraction (Class I / IIa / IIb)
-- 🔜 Inline citations at sentence level
-- 🔜 Multi-guideline comparison
-- 🔜 Export results as PDF reports
-- 🔜 Document-type aware retrieval
+- Patient-specific clinical reasoning (decision support)
+- Guideline strength extraction (Class I / IIa / IIb)
+- Inline citations at sentence level
+- Multi-guideline comparison
+- Export results as PDF reports
+- Document-type aware retrieval
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
-- 🏥 Clinical guideline exploration
-- 📚 Medical education
-- 🤖 Healthcare AI prototyping
-- 🔬 Evidence-based decision support systems
+- Clinical guideline exploration
+- Medical education
+- Healthcare AI prototyping
+- Evidence-based decision support systems
 
 ---
 
-## 👤 Author
+## Author
 
 **Sanjay D P**  
 Master's in Data Science & Artificial Intelligence  
@@ -211,6 +211,6 @@ Data Engineer
 
 ---
 
-## ⭐ Final Note
+## Final Note
 
 This project demonstrates the application of modern AI systems (RAG + LLMs) to healthcare — focusing on **accuracy**, **explainability**, and **usability**.
