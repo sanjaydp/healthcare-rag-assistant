@@ -35,7 +35,7 @@ flowchart TD
 ---
 
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -183,7 +183,7 @@ streamlit run frontend/streamlit_app.py
 
 ---
 
-## 🚧 Future Improvements
+## Future Improvements
 
 - Patient-specific clinical reasoning (decision support)
 - Guideline strength extraction (Class I / IIa / IIb)
